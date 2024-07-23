@@ -2,32 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f4efe8;
+}
+main {
+  flex: 1;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.header {
+  margin-top: 50px;
 }
+
+.header h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 20px;
+  color: #666;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.talk-to-sales {
+  background-color: #fffdff;
+}
+
+.get-started {
+  background-color: #3a1156;
+}
+
+.demo-button {
+  background-color: #f9f9f9;
+  color: #f4f4f4;
+  border: 2px solid #f8f7f9;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.companies img {
+  max-width: 100px;
+  margin: 0 20px;
+}
+
+.stack-image {
+  max-width: 400px;
+  margin: 50px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
