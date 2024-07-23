@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="bg-gray-100 py-10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-wrap justify-between">
-        <img src="logo.png" alt="Logo" className="mb-4"/>
+        {/* <Image width={500} height={500} src="logo.png" alt="Logo" className="mb-4"/> */}
           <div className="w-full md:w-1/5 mb-6 md:mb-0">
             <h4 className="text-lg font-semibold mb-4">Product</h4>
             <ul>
@@ -72,7 +72,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Resources</h4>
             <ul>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">Help Centre</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">What's new</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-gray-900">What&apos;s new</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">Resources library</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">Slack blog</a></li>
               <li><a href="#" className="text-gray-600 hover:text-gray-900">Community</a></li>

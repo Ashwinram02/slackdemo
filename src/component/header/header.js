@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
-
+import Image from 'next/image';
 const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between p-4 border-b bg-white text-black">
       <div className="flex items-center space-x-4">
-        <img src="/images/slack-salesforce-logo-nav-black.png" alt="Slack Logo" className="h-12" />
+        <Image width={500} height={500} src="/images/slack-salesforce-logo-nav-black.png" alt="Slack Logo" className="h-12" />
       </div>
       <nav className="flex items-center space-x-6 relative">
         <div className="relative">

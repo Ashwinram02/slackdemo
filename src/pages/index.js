@@ -34,13 +34,13 @@ export default function Component() {
          <div > <footer className="flex items-center justify-center p-8 space-x-8">
       {logos.map((logo, index) => (
         <a key={index} href={logo.href} target="_blank" rel="noopener noreferrer">
-          <img src={logo.src} alt={logo.alt} className="h-10" />
+          <Image width={500} height={500} src={logo.src} alt={logo.alt} className="h-10" />
         </a>
       ))}
     </footer>
     </div>
         </div>
-        <img src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
+        <Image width={500} height={500} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
       </main>
       
     </div>
@@ -86,7 +86,7 @@ export default function Component() {
           </figcaption>
         </div>
             </div>
-            <img src="/images/Slack for enterprises.gif" alt="Slack Illustration" className="w-full max-w-md" />
+            <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className="w-full max-w-md" />
           </div>
        
       </div>
@@ -130,7 +130,7 @@ export default function Component() {
             Colin Black, Chief Operating Officer, CrowdStrike
           </figcaption>
         </div>
-        <img src="/images/security.IN.gif" alt="Slack Illustration" className="w-full max-w-md" />
+        <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="w-full max-w-md" unoptimized/>
       </div>
       <div>
         <Footer/>
