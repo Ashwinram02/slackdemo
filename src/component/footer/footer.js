@@ -4,18 +4,29 @@ const Footer = () => {
     <footer className="bg-gray-100 py-10">
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-wrap justify-between">
+        <img src="logo.png" alt="Logo" className="mb-4"/>
           <div className="w-full md:w-1/5 mb-6 md:mb-0">
-            <img src="logo.png" alt="Logo" className="mb-4" />
+            <h4 className="text-lg font-semibold mb-4">Product</h4>
             <ul>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Watch demo</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Pricing</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Paid vs Free</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Accessibility</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Featured releases</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Change log</a></li>
-  <li><a href="#" className="text-gray-600 hover:text-blue-900">Status</a></li>
-</ul>
-</div>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Watch demo</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Pricing</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Paid vs Free</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Accessibility</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Featured releases</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Change log</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Status</a></li>
+    </ul>
+    <h4 className="text-lg font-semibold mb-4">WHY SLACK?</h4>
+    <ul>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack vs email</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Enterprise</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Small business</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Productivity</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Task management</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Scale</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Trust</a></li>
+    </ul>
+   </div>
 <div className="w-full md:w-1/5 mb-6 md:mb-0">
   <h4 className="text-lg font-semibold mb-4">Features</h4>
   <ul>
@@ -31,9 +42,12 @@ const Footer = () => {
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Apps & integrations</a></li>
     <li><a href="#" className="text-gray-600 hover:text-blue-900">File sharing</a></li>
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack AI</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Security</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Enterprise Key Management</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack Atlas</a></li>
   </ul>
 </div>
-<div className="w-full md:w-1/5 mb-6 md:mb-0">
+<div className="">
   <h4 className="text-lg font-semibold mb-4">Solutions</h4>
   <ul>
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Engineering</a></li>
@@ -48,6 +62,9 @@ const Footer = () => {
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Financial services</a></li>
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Retail</a></li>
     <li><a href="#" className="text-gray-600 hover:text-blue-900">Public sector</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Education</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">Health and life sciences</a></li>
+    <li><a href="#" className="text-gray-600 hover:text-blue-900">See all solutions</a></li>
   </ul>
 </div>
 
