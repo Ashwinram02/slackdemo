@@ -28,7 +28,7 @@ export default function Component() {
           <div className="flex space-x-4">
             <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
             <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">
-              WATCH DEMO 
+              WATCH DEMO hh
             </button>
           </div>
          <div > <footer className="flex items-center justify-center p-8 space-x-8">
