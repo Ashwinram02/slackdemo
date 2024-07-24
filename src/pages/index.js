@@ -28,7 +28,7 @@ export default function Component() {
           <div className="flex space-x-4">
             <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
             <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">
-              WATCH DEMO hh
+              WATCH DEMO 
             </button>
           </div>
          <div > <footer className="flex items-center justify-center p-8 space-x-8">
@@ -40,9 +40,8 @@ export default function Component() {
     </footer>
     </div>
         </div>
-        <Image width={500} height={500} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
+        <Image width={200} height={200} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
       </main>
-      
     </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
@@ -90,8 +89,7 @@ export default function Component() {
           </div>
        
       </div>
-
-      <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 mx-auto max-w-2xl lg:max-w-7xl">
+      <div className="bg-white py-16 mx-auto max-w-2xl lg:max-w-7xl">
         <h2 className="text-sm font-semibold text-gray-900">SECURITY</h2>
         <h2 className="text-4xl font-bold text-black">
           Ensure company-wide safety and compliance

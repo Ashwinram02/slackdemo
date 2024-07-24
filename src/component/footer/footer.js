@@ -1,112 +1,133 @@
 import React from 'react';
+import Image from 'next/image';
+import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaTiktok } from 'react-icons/fa';
+
+const footerData = [
+  {
+    section: "Product", 
+    links: [
+      { text: "Watch demo", href: "#" },
+      { text: "Pricing", href: "#" },
+      { text: "Paid vs Free", href: "#" },
+      { text: "Accessibility", href: "#" },
+      { text: "Featured releases", href: "#" },
+      { text: "Change log", href: "#" },
+      { text: "Status", href: "#" },
+    ],
+  },  
+  {
+    section: "Features",
+    links: [
+      { text: "Channels", href: "#" },
+      { text: "Slack Connect", href: "#" },
+      { text: "Workflow Builder", href: "#" },
+      { text: "Messaging", href: "#" },
+      { text: "Huddles", href: "#" },
+      { text: "Canvas", href: "#" },
+      { text: "Lists", href: "#" },
+      { text: "Clips", href: "#" },
+      { text: "Search", href: "#" },
+      { text: "Apps & integrations", href: "#" },
+      { text: "File sharing", href: "#" },
+      { text: "Slack AI", href: "#" },
+      { text: "Security", href: "#" },
+      { text: "Enterprise Key Management", href: "#" },
+      { text: "Slack Atlas", href: "#" },
+    ],
+  },
+  {
+    section: "Solutions",
+    links: [
+      { text: "Engineering", href: "#" },
+      { text: "IT", href: "#" },
+      { text: "Customer service", href: "#" },
+      { text: "Sales", href: "#" },
+      { text: "Project management", href: "#" },
+      { text: "Marketing", href: "#" },
+      { text: "Security", href: "#" },
+      { text: "Technology", href: "#" },
+      { text: "Media", href: "#" },
+      { text: "Financial services", href: "#" },
+      { text: "Retail", href: "#" },
+      { text: "Public sector", href: "#" },
+      { text: "Education", href: "#" },
+      { text: "Health and life sciences", href: "#" },
+      { text: "See all solutions", href: "#" },
+    ],
+  },
+  {
+    section: "Resources",
+    links: [
+      { text: "Help Centre", href: "#" },
+      { text: "What’s new", href: "#" },
+      { text: "Resources library", href: "#" },
+      { text: "Slack blog", href: "#" },
+      { text: "Community", href: "#" },
+      { text: "Customer stories", href: "#" },
+      { text: "Events", href: "#" },
+      { text: "Developers", href: "#" },
+      { text: "Partners", href: "#" },
+      { text: "Partner offers", href: "#" },
+      { text: "App Directory", href: "#" },
+      { text: "Slack Certified", href: "#" },
+    ],
+  },
+  {
+    section: "Company",
+    links: [
+      { text: "About us", href: "#" },
+      { text: "News", href: "#" },
+      { text: "Media kit", href: "#" },
+      { text: "Brand centre", href: "#" },
+      { text: "Careers", href: "#" },
+      { text: "Slack shop", href: "#" },
+      { text: "Engineering blog", href: "#" },
+      { text: "Design blog", href: "#" },
+      { text: "Contact us", href: "#" },
+    ],
+  },
+  {
+    section: "WHY SLACK?",
+    links: [
+      { text: "Slack vs email", href: "#" },
+      { text: "Enterprise", href: "#" },
+      { text: "Small business", href: "#" },
+      { text: "Productivity", href: "#" },
+      { text: "Task management", href: "#" },
+      { text: "Scale", href: "#" },
+      { text: "Trust", href: "#" },
+    ],
+  },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 py-10">
-      <div className="container mx-auto px-4 md:px-8">
+    <footer className="bg-white py-10">
+      <div className=" px-4 md:px-10">
         <div className="flex flex-wrap justify-between">
-        {/* <Image width={500} height={500} src="logo.png" alt="Logo" className="mb-4"/> */}
-          <div className="w-full md:w-1/5 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-4">Product</h4>
-            <ul>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Watch demo</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Pricing</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Paid vs Free</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Accessibility</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Featured releases</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Change log</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Status</a></li>
-    </ul>
-    <h4 className="text-lg font-semibold mb-4">WHY SLACK?</h4>
-    <ul>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack vs email</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Enterprise</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Small business</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Productivity</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Task management</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Scale</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Trust</a></li>
-    </ul>
-   </div>
-<div className="w-full md:w-1/5 mb-6 md:mb-0">
-  <h4 className="text-lg font-semibold mb-4">Features</h4>
-  <ul>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Channels</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack Connect</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Workflow Builder</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Messaging</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Huddles</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Canvas</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Lists</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Clips</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Search</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Apps & integrations</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">File sharing</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack AI</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Security</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Enterprise Key Management</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Slack Atlas</a></li>
-  </ul>
-</div>
-<div className="">
-  <h4 className="text-lg font-semibold mb-4">Solutions</h4>
-  <ul>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Engineering</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">IT</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Customer service</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Sales</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Project management</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Marketing</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Security</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Technology</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Media</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Financial services</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Retail</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Public sector</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Education</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">Health and life sciences</a></li>
-    <li><a href="#" className="text-gray-600 hover:text-blue-900">See all solutions</a></li>
-  </ul>
-</div>
-
-          <div className="w-full md:w-1/5 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Help Centre</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">What&apos;s new</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Resources library</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Slack blog</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Community</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Customer stories</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Events</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Developers</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Partners</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Partner offers</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">App Directory</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Slack Certified</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/5 mb-6 md:mb-0">
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
-            <ul>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">About us</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">News</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Media kit</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Brand centre</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Careers</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Slack shop</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Engineering blog</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Design blog</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-gray-900">Contact us</a></li>
-            </ul>
-          </div>
+        <Image width={100} height={100} src="/images/logo.png" alt="Logo" className="mb-4"/>
+          {footerData.map((section, index) => (
+            <div key={index} className=" md:w-1/5 mb-6 ">
+              <h4 className="text-lg font-semibold">{section.section}</h4>
+              <ul>
+                {section.links.map((link, idx) => (
+                  <li key={idx}>
+                    <a href={link.href} className="text-gray-600 hover:text-blue-900">
+                      {link.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
         <div className="flex justify-center mt-10 space-x-6">
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-linkedin"></i></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-instagram"></i></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-facebook"></i></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-twitter"></i></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-youtube"></i></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><i className="fab fa-tiktok"></i></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaLinkedin /></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaInstagram /></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaFacebook /></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaTwitter /></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaYoutube /></a>
+          <a href="#" className="text-gray-600 hover:text-gray-900"><FaTiktok /></a>
         </div>
       </div>
     </footer>
