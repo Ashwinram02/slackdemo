@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { FaLinkedin, FaInstagram, FaFacebook, FaTwitter, FaYoutube, FaTiktok } from 'react-icons/fa';
+import Link from 'next/link';
 
 const footerData = [
   {
@@ -100,34 +101,42 @@ const footerData = [
   },
 ];
 
+const socialMediaLinks = [
+  { href: "#", icon: <FaLinkedin />, label: "LinkedIn" },
+  { href: "#", icon: <FaInstagram />, label: "Instagram" },
+  { href: "#", icon: <FaFacebook />, label: "Facebook" },
+  { href: "#", icon: <FaTwitter />, label: "Twitter" },
+  { href: "#", icon: <FaYoutube />, label: "YouTube" },
+  { href: "#", icon: <FaTiktok />, label: "TikTok" },
+];
+
 const Footer = () => {
   return (
-    <footer className="bg-white py-10">
-      <div className=" px-4 md:px-10">
+    <footer className="bg-white">
+      <div className="flex justify-center space-x-6">
+        {socialMediaLinks.map((link, index) => (
+          <Link key={index} href={link.href} className="text-black hover:text-blue-500" aria-label={link.label}>
+            {link.icon}
+          </Link>
+        ))}
+      </div>
+      <div className="px-4 md:px-10">
         <div className="flex flex-wrap justify-between">
-        <Image width={100} height={100} src="/images/logo.png" alt="Logo" className="mb-4"/>
+          <Image width={100} height={100} src="/images/logo.png" alt="Logo" className="mb-4"/>
           {footerData.map((section, index) => (
-            <div key={index} className=" md:w-1/5 mb-6 ">
+            <div key={index} className="md:w-1/5 mb-6">
               <h4 className="text-lg font-semibold">{section.section}</h4>
               <ul>
                 {section.links.map((link, idx) => (
                   <li key={idx}>
-                    <a href={link.href} className="text-gray-600 hover:text-blue-900">
+                    <Link href={link.href} className="text-gray-600 hover:text-blue-700">
                       {link.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-        <div className="flex justify-center mt-10 space-x-6">
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaLinkedin /></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaInstagram /></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaFacebook /></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaTwitter /></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaYoutube /></a>
-          <a href="#" className="text-gray-600 hover:text-gray-900"><FaTiktok /></a>
         </div>
       </div>
     </footer>

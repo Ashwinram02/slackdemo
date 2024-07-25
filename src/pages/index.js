@@ -31,17 +31,16 @@ export default function Component() {
               WATCH DEMO 
             </button>
           </div>
-         <div > <footer className="flex items-center justify-center p-8 space-x-8">
+        </div>
+        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
+      </main>
+      <footer className="flex items-center justify-center p-8 space-x-8 bg-white ">
       {logos.map((logo, index) => (
-        <a key={index} href={logo.href} target="_blank" rel="noopener noreferrer">
-          <Image width={500} height={500} src={logo.src} alt={logo.alt} className="h-10" />
-        </a>
+        <Link key={index} href={logo.href} target="_blank" rel="noopener noreferrer">
+          <Image width={100} height={100} src={logo.src} alt={logo.alt} className="hover:text-blue-500" />
+        </Link>
       ))}
     </footer>
-    </div>
-        </div>
-        <Image width={200} height={200} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
-      </main>
     </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
@@ -85,7 +84,7 @@ export default function Component() {
           </figcaption>
         </div>
             </div>
-            <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className="w-full max-w-md" />
+            <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className="w-full max-w-md"unoptimized />
           </div>
        
       </div>
@@ -128,7 +127,10 @@ export default function Component() {
             Colin Black, Chief Operating Officer, CrowdStrike
           </figcaption>
         </div>
-        <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="w-full max-w-md" unoptimized/>
+        <div>
+        <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="w-full max-w-md"unoptimized/> 
+        </div>
+        
       </div>
       <div>
         <Footer/>
