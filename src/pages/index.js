@@ -36,8 +36,8 @@ export default function Component() {
       </main>
       <footer className="flex items-center justify-center p-8 space-x-8 bg-white ">
       {logos.map((logo, index) => (
-        <button>
-        <Link key={index} href={logo.href} target="_blank" rel="noopener noreferrer">
+        <button key={index}>
+        <Link href={logo.href} target="_blank" rel="noopener noreferrer">
           <Image width={100} height={100} src={logo.src} alt={logo.alt} className="logo"/>
         </Link>
         </button>
