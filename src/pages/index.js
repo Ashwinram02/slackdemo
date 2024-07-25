@@ -36,9 +36,11 @@ export default function Component() {
       </main>
       <footer className="flex items-center justify-center p-8 space-x-8 bg-white ">
       {logos.map((logo, index) => (
+        <button>
         <Link key={index} href={logo.href} target="_blank" rel="noopener noreferrer">
-          <Image width={100} height={100} src={logo.src} alt={logo.alt} className="hover:text-blue-500" />
+          <Image width={100} height={100} src={logo.src} alt={logo.alt} className="logo"/>
         </Link>
+        </button>
       ))}
     </footer>
     </div>
@@ -88,7 +90,7 @@ export default function Component() {
           </div>
        
       </div>
-      <div className="bg-white py-16 mx-auto max-w-2xl lg:max-w-7xl">
+      <div className="bg-white  items-center md:flex-row md:space-y-0 md:space-x-10 ">
         <h2 className="text-sm font-semibold text-gray-900">SECURITY</h2>
         <h2 className="text-4xl font-bold text-black">
           Ensure company-wide safety and compliance

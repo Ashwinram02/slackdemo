@@ -13,15 +13,13 @@ const Header = () => {
         <Image width={100} height={100} src="/images/slack-salesforce-logo-nav-black.png" alt="Slack Logo" className="h-12" />
       </div>
       <nav className="flex items-center space-x-6 relative">    
-        <div className="relative">
-          <button className="text-sm font-medium hover:text-blue-600 transition duration-300"
-            onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
-            onMouseLeave={() => setIsFeaturesDropdownOpen(false)}>
+        <div className="relative"
+         onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
+         onMouseLeave={() => setIsFeaturesDropdownOpen(false)}>
+          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">
               Features</button> 
           {isFeaturesDropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4"
-              onMouseEnter={() => setIsFeaturesDropdownOpen(true)}
-              onMouseLeave={() => setIsFeaturesDropdownOpen(false)}>
+            <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4">
                 <div>
                 <h3 className="flextext-xs font-bold uppercase mb-2">COLLABORATION</h3>
                 <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Channels<p classname="text-sm">Organize teams and work</p></Link>
@@ -51,16 +49,14 @@ const Header = () => {
             </div>
           )}
         </div>
-        <div className="relative">
-          <button className="text-sm font-medium hover:text-blue-600 transition duration-300"
-           onMouseEnter={() => setIsSolutionsDropdownOpen(true)}
-           onMouseLeave={() => setIsSolutionsDropdownOpen(false)}>
+        <div className="relative"
+        onMouseEnter={() => setIsSolutionsDropdownOpen(true)}
+        onMouseLeave={() => setIsSolutionsDropdownOpen(false)}>
+          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">
             Solutions
           </button>
           {isSolutionsDropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-[600px] bg-white border rounded shadow-lg grid grid-cols-2 p-4 gap-4"
-             onMouseEnter={() => setIsSolutionsDropdownOpen(true)}
-             onMouseLeave={() => setIsSolutionsDropdownOpen(false)}>
+            <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-2 p-4 gap-4">
               <div>
                 <h3 className="text-xs font-bold uppercase mb-2">BY DEPARTMENT</h3>
                 <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Engineering</Link>
@@ -88,16 +84,14 @@ const Header = () => {
         <Link href="#" className="text-sm font-medium hover:text-blue-600 transition duration-300">
           Enterprise
         </Link>
-        <div className="relative">
-          <button className="text-sm font-medium hover:text-blue-600 transition duration-300"
-            onMouseEnter={() => setIsResourcesDropdownOpen(true)}
-            onMouseLeave={() => setIsResourcesDropdownOpen(false)}>
+        <div className="relative"
+          onMouseEnter={() => setIsResourcesDropdownOpen(true)}
+          onMouseLeave={() => setIsResourcesDropdownOpen(false)}>
+          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">
             Resources
           </button>
           {isResourcesDropdownOpen && (
-            <div className="absolute top-full left-0 mt-2 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4"
-            onMouseEnter={() => setIsResourcesDropdownOpen(true)}
-            onMouseLeave={() => setIsResourcesDropdownOpen(false)}> 
+            <div className="absolute top-full left-0  w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4"> 
               <div>
                 <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Resources library</Link>
                 <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Events</Link>
