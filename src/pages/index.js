@@ -140,7 +140,7 @@ export default function Component() {
        </div>  
        <footer className="flex items-center justify-center p-8 space-x-9">
        {certlogo.map((logo, index) => (
-        <Image width={100} height={100} src={logo.src} alt={logo.alt} className=""/>
+        <Image key={index} width={100} height={100} src={logo.src} alt={logo.alt} className=""/>
        ))}
        </footer>
       </div>
@@ -232,6 +232,5 @@ function SearchIcon(props) {
       <circle cx="11" cy="11" r="8" />
       <path d="m21 21-4.3-4.3" />
     </svg>
-    
   )
 }
