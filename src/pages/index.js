@@ -234,5 +234,4 @@ function SearchIcon(props) {
     </svg>
     
   )
-  
 }
