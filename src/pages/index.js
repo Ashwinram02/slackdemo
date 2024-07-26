@@ -34,7 +34,7 @@ export default function Component() {
         </div>
         <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
       </main>
-      <footer className="flex items-center justify-center p-8 space-x-8 bg-white ">
+      <footer className="flex items-center justify-center p-8 space-x-9 bg-white ">
       {logos.map((logo, index) => (
         <button key={index}>
         <Link href={logo.href} target="_blank" rel="noopener noreferrer">
@@ -44,14 +44,14 @@ export default function Component() {
       ))}
     </footer>
     </div>
-      <div className="py-16 px-4 sm:px-6 lg:px-8 bg-">
+      <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
          <div>
             <h2 className="text-sm font-semibold text-gray-900">PRODUCTIVITY AT SCALE</h2>
             <h2 className="text-4xl font-bold text-black">
               Meet the needs of your organisation with powerful productivity tools
             </h2>
-            <ul className="mt-4 space-y-4 text-left text-lg text-gray-700 lg:mx-auto">
+            <ul className="mt-4 space-y-4 text-left text-lg text-black lg:mx-auto">
               <li className="flex items-center">
                 <svg className="flex-shrink-0 w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -78,24 +78,23 @@ export default function Component() {
             <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl ">
           <blockquote className="mt-10">
             <p className=" font-medium text-gray-900">
-              &ldquo;<strong>Slack has been the hammer that has helped us tear down the walls of silos. It has enabled us to position Slack as the operating system of collaboration across 194 countries and 171 offices, pulling us together like nothing else has.&rdquo;
-              </strong></p>
+              &ldquo;Slack has been the hammer that has helped us tear down the walls of silos. It has enabled us to position Slack as the operating system of collaboration across 194 countries and 171 offices, pulling us together like nothing else has.&rdquo;</p>
           </blockquote>
           <figcaption className="mt-3 text-sm text-black-500">
-            Jeff Dow, Executive Vice President, Media and Broadcast Operations
+          <Image width={50} height={50} src="/images/fox.png" alt="Slack Illustration"className=" max-w-md"/>
+          <strong>Jeff Dow, Executive Vice President, Media and Broadcast Operations</strong>
           </figcaption>
         </div>
             </div>
-            <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className="w-full max-w-md"unoptimized />
+            <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className=""unoptimized />
           </div>
-       
       </div>
-      <div className="bg-white  items-center md:flex-row md:space-y-0 md:space-x-10 ">
+      <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="flex  w-full mx-auto lg:max-w-7xl ">
+        <div>
         <h2 className="text-sm font-semibold text-gray-900">SECURITY</h2>
-        <h2 className="text-4xl font-bold text-black">
-          Ensure company-wide safety and compliance
-        </h2>
-        <ul className="mt-4 space-y-4 text-left text-lg text-gray-700 lg:mx-auto">
+        <h2 className="text-4xl font-bold text-black">Ensure company-wide safety and compliance</h2>
+        <ul className="mt-4 space-y-4 text-left text-lg text-black lg:mx-auto">
           <li className="flex items-center">
             <svg className="flex-shrink-0 w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -119,21 +118,91 @@ export default function Component() {
           <Link href="/slack-security" className="text-blue-500 ml-2">Learn more about security</Link>
           <i className="flex text-blue-500"><FaArrowRight /></i>
         </div>
-        <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl">
-          <blockquote className="mt-10">
+        <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl mt-10">
             <p className="font-medium text-gray-900">
-              &ldquo;<strong>With the introduction of Slack Enterprise Key Management as an added security feature, we immediately saw its value in giving us total control of our data and the assurance that we’re protected in the event of a security threat in our supply chain.&rdquo;</strong>
+              &ldquo;With the introduction of Slack Enterprise Key Management as an added security feature, we immediately saw its value in giving us total control of our data and the assurance that we’re protected in the event of a security threat in our supply chain.&rdquo;
             </p>
-          </blockquote>
           <figcaption className="mt-3 text-sm text-black-500">
-            Colin Black, Chief Operating Officer, CrowdStrike
+          <Image width={150} height={150} src="/images/crowdstrike.png" alt="Slack Illustration"className=" max-w-md"/>
+            <strong>Colin Black, Chief Operating Officer, CrowdStrike</strong>
           </figcaption>
         </div>
-        <div>
-        <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="w-full max-w-md"unoptimized/> 
         </div>
-        
+        <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="max-w-md"unoptimized/>
+       </div>  
+       <div className="flex p-10 items-center justify-center space-x-12">
+          <Image width={100} height={100} src="/images/logo-cert-finra.png" alt="Finra Logo" />
+          <Image width={100} height={100} src="/images/logo_hipaa.png" alt="Hipaa Logo" />
+          <Image width={50} height={50} src="/images/logo-Fedramp.png" alt="Fedramp Logo" />
+          <Image width={100} height={100} src="/images/logo-gdpr.png" alt="Gdpr Logo" />
+          <Image width={100} height={100} src="/images/logo-aicpa-soc.png" alt="Aicpa Logo" />
+          <Image width={100} height={100} src="/images/logo-iso-27001.png" alt="Iso Logo" />
+        </div>
       </div>
+      <div className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="flex  w-full mx-auto lg:max-w-7xl ">
+       <div>
+        <h2 className="text-sm font-semibold text-gray-900">PLATFORM</h2>
+        <h2 className="text-4xl font-bold text-black">Customise Slack to work the way that you do</h2>
+        <ul className="mt-4 space-y-4 text-left text-lg text-black lg:mx-auto">
+          <li className="flex items-center">
+            <svg
+              className="flex-shrink-0 w-6 h-6 text-indigo-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Choose from over 2,600 apps to help bring all your tools together</span>
+          </li>
+          <li className="flex items-center">
+            <svg
+              className="flex-shrink-0 w-6 h-6 text-indigo-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Build time-saving automations and integrate your favourite apps</span>
+          </li>
+          <li className="flex items-center">
+            <svg
+              className="flex-shrink-0 w-6 h-6 text-indigo-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Integrate internal tools, processes and data with ease</span>
+          </li>
+        </ul>
+        <div className="mt-5 flex items-center">
+          <Link href="/apps-integrations" className="text-blue-500 ml-2">
+            Learn more about apps and integrations
+          </Link>
+          <i className="flex text-blue-500">
+            <FaArrowRight />
+          </i>
+        </div>
+        <div className="flex p-8 space-x-8 ">
+          <Image width={50} height={50} src="/images/icon-zoom.png" alt="Zoom Logo" />
+          <Image width={50} height={50} src="/images/icon-outlook.png" alt="Outlook Logo" />
+          <Image width={50} height={50} src="/images/icon-jira.png" alt="Jira Logo" />
+          <Image width={50} height={50} src="/images/icon-onedrive.png" alt="OneDrive Logo" />
+          <Image width={50} height={50} src="/images/icon-drive.png" alt="Google Drive Logo" />
+          <Image width={50} height={50} src="/images/icon-salesforce.png" alt="Salesforce Logo" />
+          <Image width={50} height={50} src="/images/icon-gmail.png" alt="Gmail Logo" />
+          <Image width={50} height={50} src="/images/icon-dropbox.png" alt="Dropbox Logo" />
+        </div>
+        </div>
+        <Image width={500} height={500} src="/images/4-illo-platform.IN.gif" alt="Platform Illustration" unoptimized/>
+        </div>
+       </div>
       <div>
         <Footer/>
       </div>
