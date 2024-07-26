@@ -14,6 +14,14 @@ export default function Component() {
     { src: '/images/bbc.png', alt: 'BBC Logo', href: 'https://bbc.com' },
     { src: '/images/ocado-logo.png', alt: 'Ocado Technology Logo', href: 'https://ocado.com' },
   ];
+  const certlogo = [
+    { src: '/images/logo-cert-finra.png', alt: 'Finra Logo'},
+    { src: '/images/logo_hipaa.png', alt: 'Hipaa Logo'},
+    { src: '/images/logo-Fedramp.png', alt: 'Fedramp Log'},
+    { src: '/images/logo-gdpr.png', alt: 'Gdpr Logo'},
+    { src: '/images/logo-aicpa-soc.png', alt: 'Aicpa Logo'},
+    { src: '/images/logo-iso-27001.png', alt: 'Iso Logo'},
+  ];
   return (
     <><div>
       <Header/>
@@ -130,14 +138,11 @@ export default function Component() {
         </div>
         <Image width={500} height={500} src="/images/security.IN.gif" alt="Slack Illustration" className="max-w-md"unoptimized/>
        </div>  
-       <div className="flex p-10 items-center justify-center space-x-12">
-          <Image width={100} height={100} src="/images/logo-cert-finra.png" alt="Finra Logo" />
-          <Image width={100} height={100} src="/images/logo_hipaa.png" alt="Hipaa Logo" />
-          <Image width={50} height={50} src="/images/logo-Fedramp.png" alt="Fedramp Logo" />
-          <Image width={100} height={100} src="/images/logo-gdpr.png" alt="Gdpr Logo" />
-          <Image width={100} height={100} src="/images/logo-aicpa-soc.png" alt="Aicpa Logo" />
-          <Image width={100} height={100} src="/images/logo-iso-27001.png" alt="Iso Logo" />
-        </div>
+       <footer className="flex items-center justify-center p-8 space-x-9">
+       {certlogo.map((logo, index) => (
+        <Image width={100} height={100} src={logo.src} alt={logo.alt} className=""/>
+       ))}
+       </footer>
       </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
