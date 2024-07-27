@@ -126,7 +126,7 @@ export default function Component() {
           <Link href="/slack-security" className="text-blue-500 ml-2">Learn more about security</Link>
           <i className="flex text-blue-500"><FaArrowRight /></i>
         </div>
-        <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl mt-10">
+        <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl">
             <p className="font-medium text-gray-900">
               &ldquo;With the introduction of Slack Enterprise Key Management as an added security feature, we immediately saw its value in giving us total control of our data and the assurance that we’re protected in the event of a security threat in our supply chain.&rdquo;
             </p>

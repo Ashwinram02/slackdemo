@@ -71,6 +71,52 @@ const solutionsData = [
     ],
   },
 ];
+const resources = [
+  {
+    title: 'Resources library',
+    href: '#',
+  },
+  {
+    title: 'Events',
+    href: '#',
+  },
+  {
+    title: 'Customer stories',
+    href: '#',
+  },
+  {
+    title: 'Blog',
+    href: '#',
+  },
+  {
+    title: 'What’s new',
+    href: '#',
+  },
+  {
+    title: 'Developers',
+    href: '#',
+  },
+  {
+    title: 'Community',
+    href: '#',
+  },
+  {
+    title: 'App Directory',
+    href: '#',
+  },
+  {
+    title: 'Watch demo',
+    href: '#',
+  },
+  {
+    title: 'Partners',
+    href: '#',
+  },
+  {
+    title: 'Slack Certified',
+    href: '#',
+  },
+];
 const Header = () => {
   const [isFeaturesDropdownOpen, setIsFeaturesDropdownOpen] = useState(false);
   const [isSolutionsDropdownOpen, setIsSolutionsDropdownOpen] = useState(false);
@@ -127,30 +173,31 @@ const Header = () => {
         <div className="relative"
           onMouseEnter={() => setIsResourcesDropdownOpen(true)}
           onMouseLeave={() => setIsResourcesDropdownOpen(false)}>
-          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">
-            Resources
-          </button>
-          {isResourcesDropdownOpen && (
-            <div className="absolute top-full left-0  w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4"> 
-              <div>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Resources library</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Events</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Customer stories</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Blog</Link>
-              </div>
-              <div>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">What’s new</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Developers</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Community</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">App Directory</Link>
-              </div>
-              <div>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Watch demo</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Partners</Link>
-                <Link href="#" className="block text-sm px-4 py-2 text-black hover:bg-gray-100">Slack Certified</Link>
-              </div>
-            </div>
-          )}
+          <button
+        className="text-sm font-medium hover:text-blue-600 transition duration-300"
+        onClick={() => setIsResourcesDropdownOpen(!isResourcesDropdownOpen)}
+      >
+        Resources
+      </button>
+      {isResourcesDropdownOpen && (
+        <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4">
+          {resources.slice(0, 4).map((resource, index) => (
+            <Link key={index} href={resource.href} className="block text-sm px-4 py-2 text-black hover:bg-gray-100">
+              {resource.title}
+            </Link>
+          ))}
+          {resources.slice(4, 8).map((resource, index) => (
+            <Link key={index} href={resource.href} className="block text-sm px-4 py-2 text-black hover:bg-gray-100">
+              {resource.title}
+            </Link>
+          ))}
+          {resources.slice(8, 11).map((resource, index) => (
+            <Link key={index} href={resource.href} className="block text-sm px-4 py-2 text-black hover:bg-gray-100">
+              {resource.title}
+            </Link>
+          ))}
+        </div>
+      )}
         </div>
         <Link href="#" className="text-sm font-medium hover:text-blue-600 transition duration-300">
           Pricing
