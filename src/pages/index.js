@@ -2,7 +2,7 @@ import React from 'react';
 import Link from "next/link"
 import Image from 'next/image';
 import Header from '@/component/header/header';
-import { FaArrowRight } from 'react-icons/fa';
+import { FaArrowRight, FaShieldAlt, FaBriefcase, FaQuestionCircle, FaLightbulb } from 'react-icons/fa';
 import Footer from '@/component/footer/footer';
 
 export default function Component() {
@@ -23,7 +23,7 @@ export default function Component() {
     { src: '/images/logo-iso-27001.png', alt: 'Iso Logo'},
   ];  
   return (
-    <><div>
+    <>
       <Header/>
       <main className="bg-white flex  items-center md:flex-row md:space-y-0 md:space-x-10">
         <div className="max-w-lg space-y-4 mx-auto">
@@ -35,9 +35,7 @@ export default function Component() {
           </p>
           <div className="flex space-x-4">
             <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
-            <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">
-              WATCH DEMO 
-            </button>
+            <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
           </div>
         </div>
         <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
@@ -51,7 +49,6 @@ export default function Component() {
         </button>
       ))}
     </footer>
-    </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
          <div>
@@ -87,7 +84,7 @@ export default function Component() {
           <blockquote className="mt-10">
             <p className=" font-medium text-gray-900">
               &ldquo;Slack has been the hammer that has helped us tear down the walls of silos. It has enabled us to position Slack as the operating system of collaboration across 194 countries and 171 offices, pulling us together like nothing else has.&rdquo;</p>
-          </blockquote>
+          </blockquote> 
           <figcaption className="mt-3 text-sm text-black-500">
           <Image width={50} height={50} src="/images/fox.png" alt="Slack Illustration"className=" max-w-md"/>
           <strong>Jeff Dow, Executive Vice President, Media and Broadcast Operations</strong>
@@ -98,7 +95,7 @@ export default function Component() {
           </div>
       </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="flex  w-full mx-auto lg:max-w-7xl ">
+      <div className="flex flex-col lg:flex-row w-full mx-auto lg:max-w-7xl space-y-8 lg:space-y-0 lg:space-x-8 ">
         <div>
         <h2 className="text-sm font-semibold text-gray-900">SECURITY</h2>
         <h2 className="text-4xl font-bold text-black">Ensure company-wide safety and compliance</h2>
@@ -207,7 +204,7 @@ export default function Component() {
         </div>
         <Image width={500} height={500} src="/images/4-illo-platform.IN.gif" alt="Platform Illustration" unoptimized/>
         </div>
-       </div>
+       </div> 
        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-black">Ready to take the next step with Slack for your enterprise?</h2>
@@ -231,6 +228,60 @@ export default function Component() {
           </div>
         </div>
       </div>
+      <div className="bg-gray-50 py-20 px-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 className="text-3xl font-bold">Solutions</h2>
+          <p className="mt-4 text-gray-600">
+            For all kinds of departments in all kinds of industries, Slack keeps communication organised and efficient.
+          </p>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Link href="/security" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <i className="text-xl text-gray-700 mr-4"><FaShieldAlt/></i>
+                  <span className="text-lg font-medium text-gray-900">Security</span>
+                </div>
+                <i className="text-gray-500"><FaArrowRight/></i>
+              </div>
+            </Link>
+            <Link href="/sales" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <i className="text-xl text-gray-700 mr-4"><FaBriefcase/></i>
+                  <span className="text-lg font-medium text-gray-900">Sales</span>
+                </div>
+                <i className="text-gray-500"><FaArrowRight/></i>
+              </div>
+            </Link>
+            <Link href="/customer-service" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <i className="text-xl text-gray-700 mr-4"><FaQuestionCircle/></i>
+                  <span className="text-lg font-medium text-gray-900">Customer Service</span>
+                </div>
+                <i className="text-gray-500"><FaArrowRight/></i>
+              </div>
+            </Link>
+            <Link href="/tech" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center">
+                  <i className="text-xl text-gray-700 mr-4"><FaLightbulb/></i>
+                  <span className="text-lg font-medium text-gray-900">Tech</span>
+                </div>
+                <i className="text-gray-500"><FaArrowRight/></i>
+              </div>
+            </Link>
+          </div>
+          <Link href="/solutions" className="mt-8 inline-block text-blue-500 hover:underline">
+            See all Solutions <FaArrowRight className="inline ml-2" />
+          </Link>
+        </div>
+        <div className="flex justify-center">
+          <Image src="/img-solutions.png" alt="Solutions Illustration" width={400} height={400} />
+        </div>
+      </div>
+    </div>
       <div>
         <Footer/>
       </div>
