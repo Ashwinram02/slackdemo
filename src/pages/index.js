@@ -67,7 +67,7 @@ export default function Component() {
                 <svg className="flex-shrink-0 w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="">Get a glimpse of your entire org with ease using <a href="https://slack.com/atlas" className="text-indigo-600">Slack Atlas</a>, our built-in team directory tool</span>
+                <span className="">Get a glimpse of your entire org with ease using <a href="https://slack.com/atlas" className="text-indigo-600 hover:underline">Slack Atlas</a>, our built-in team directory tool</span>
               </li>
               <li className="flex items-center">
                 <svg className="flex-shrink-0 w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +77,7 @@ export default function Component() {
               </li>
             </ul>
             <div className="mt-5 flex items-center ">
-             <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 ">Learn more about Slack at scale </Link> 
+             <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 hover:underline">Learn more about Slack at scale </Link> 
              <i className="flex text-blue-500"><FaArrowRight /></i>
             </div>
             <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl ">
@@ -116,11 +116,11 @@ export default function Component() {
             <svg className="flex-shrink-0 w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
-            <span className="">Take control of data using your own encryption keys with <a href="https://slack.com/enterprise-key-management" className="text-indigo-600">Slack Enterprise Key Management</a></span>
+            <span className="">Take control of data using your own encryption keys with <a href="https://slack.com/enterprise-key-management" className="text-indigo-600 hover:underline">Slack Enterprise Key Management</a></span>
           </li>
         </ul>
         <div className="mt-5 flex items-center">
-          <Link href="/slack-security" className="text-blue-500 ml-2">Learn more about security</Link>
+          <Link href="/slack-security" className="text-blue-500 hover:underline ml-2">Learn more about security</Link>
           <i className="flex text-blue-500"><FaArrowRight /></i>
         </div>
         <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl">
@@ -141,7 +141,7 @@ export default function Component() {
        ))}
        </footer>
       </div>
-      <div className="py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-transparent py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
        <div>
         <h2 className="text-sm font-semibold text-gray-900">PLATFORM</h2>
@@ -184,10 +184,10 @@ export default function Component() {
           </li>
         </ul>
         <div className="mt-5 flex items-center">
-          <Link href="/apps-integrations" className="text-blue-500 ml-2">
+          <Link href="/apps-integrations" className="text-blue-500 ml-2 hover:underline">
             Learn more about apps and integrations
           </Link>
-          <i className="flex text-blue-500">
+          <i className="flex text-blue-500 hover:underline">
             <FaArrowRight />
           </i>
         </div>
@@ -208,7 +208,7 @@ export default function Component() {
        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-black">Ready to take the next step with Slack for your enterprise?</h2>
-          <Link href="/contact-sales" className="text-blue-500 mt-4 inline-block">Chat with sales to get started <FaArrowRight className="inline-block ml-2" /></Link>
+          <Link href="/contact-sales" className="text-blue-500 hover:underline mt-4 inline-block">Chat with sales to get started <FaArrowRight className="inline-block hover:underline" /></Link>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
@@ -228,11 +228,11 @@ export default function Component() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-50 py-20 px-10">
+      <div className="bg-transparent py-20 px-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div>
           <h2 className="text-3xl font-bold">Solutions</h2>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-black">
             For all kinds of departments in all kinds of industries, Slack keeps communication organised and efficient.
           </p>
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -278,7 +278,7 @@ export default function Component() {
           </Link>
         </div>
         <div className="flex justify-center">
-          <Image src="/img-solutions.png" alt="Solutions Illustration" width={400} height={400} />
+          <Image  width={400} height={400} src="/img-solutions.png" alt="Solutions Illustration"/>
         </div>
       </div>
     </div>
