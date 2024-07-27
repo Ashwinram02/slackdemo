@@ -173,14 +173,9 @@ const Header = () => {
         <div className="relative"
           onMouseEnter={() => setIsResourcesDropdownOpen(true)}
           onMouseLeave={() => setIsResourcesDropdownOpen(false)}>
-          <button
-        className="text-sm font-medium hover:text-blue-600 transition duration-300"
-        onClick={() => setIsResourcesDropdownOpen(!isResourcesDropdownOpen)}
-      >
-        Resources
-      </button>
-      {isResourcesDropdownOpen && (
-        <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4">
+          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">Resources</button>
+     {isResourcesDropdownOpen && (
+         <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4">
           {resources.slice(0, 4).map((resource, index) => (
             <Link key={index} href={resource.href} className="block text-sm px-4 py-2 text-black hover:bg-gray-100">
               {resource.title}

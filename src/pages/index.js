@@ -21,7 +21,7 @@ export default function Component() {
     { src: '/images/logo-gdpr.png', alt: 'Gdpr Logo'},
     { src: '/images/logo-aicpa-soc.png', alt: 'Aicpa Logo'},
     { src: '/images/logo-iso-27001.png', alt: 'Iso Logo'},
-  ];
+  ];  
   return (
     <><div>
       <Header/>
@@ -208,6 +208,29 @@ export default function Component() {
         <Image width={500} height={500} src="/images/4-illo-platform.IN.gif" alt="Platform Illustration" unoptimized/>
         </div>
        </div>
+       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-black">Ready to take the next step with Slack for your enterprise?</h2>
+          <Link href="/contact-sales" className="text-blue-500 mt-4 inline-block">Chat with sales to get started <FaArrowRight className="inline-block ml-2" /></Link>
+        </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="text-center">
+            <Image width={50} height={50} src="/images/Warehouse_management.png" alt="Enterprise-level everything" />
+            <h3 className="mt-4 text-xl font-semibold text-black">Enterprise-level everything</h3>
+            <p className="mt-2 text-black">Power productivity at scale by making processes easier and bringing all your workspaces together.</p>
+          </div>
+          <div className="text-center">
+            <Image width={50} height={50} src="/images/lock-icon.png" alt="Company-wide compliance" />
+            <h3 className="mt-4 text-xl font-semibold text-black">Company-wide compliance</h3>
+            <p className="mt-2 text-black">Sure up security across your organisation by managing access to your most important information.</p>
+          </div>
+          <div className="text-center">
+            <Image width={50} height={50} src="/images/Analytics.png" alt="Analytics for all" />
+            <h3 className="mt-4 text-xl font-semibold text-black">Analytics for all</h3>
+            <p className="mt-2 text-black">Measure and maximise tech stack adoption with enterprise-grade analytics.</p>
+          </div>
+        </div>
+      </div>
       <div>
         <Footer/>
       </div>
