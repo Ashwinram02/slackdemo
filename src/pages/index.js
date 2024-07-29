@@ -25,22 +25,26 @@ export default function Component() {
   return (
     <>
       <Header/>
-      <main className="bg-white flex  items-center md:flex-row md:space-y-0 md:space-x-10">
-        <div className="max-w-lg space-y-4 mx-auto">
+      <main> 
+        <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+        <div className="flex  w-full mx-auto lg:max-w-7xl ">
+          <div>
           <h2 className="text-sm font-semibold text-black">ENTERPRISE</h2>
           <h1 className="text-4xl font-bold text-black">Performance and productivity for every level of your enterprise</h1>
-          <p className="text-lg text-muted-foreground text-black">
+          <p className="text-lg mt-6 lg:mx-aut  text-black">
             Scale your processes, ensure company-wide compliance and maximise tech stack adoption - all with the power
             of Slack.
           </p>
           <div className="flex space-x-4">
-            <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
-            <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
+            <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 mt-6 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
+            <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 mt-6 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
           </div>
         </div>
-        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="w-full max-w-md" />
+        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="max-w-md"/>
+      </div>
+     </div>
       </main>
-      <footer className="flex items-center justify-center p-8 space-x-9 bg-white ">
+      <footer className="flex justify-center space-x-9 bg-white  ">
       {logos.map((logo, index) => (
         <button key={index}>
         <Link href={logo.href} target="_blank" rel="noopener noreferrer">
@@ -52,7 +56,7 @@ export default function Component() {
       <div className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="flex  w-full mx-auto lg:max-w-7xl ">
          <div>
-            <h2 className="text-sm font-semibold text-gray-900">PRODUCTIVITY AT SCALE</h2>
+            <h2 className="text-sm font-semibold text-black">PRODUCTIVITY AT SCALE</h2>
             <h2 className="text-4xl font-bold text-black">
               Meet the needs of your organisation with powerful productivity tools
             </h2>
@@ -89,7 +93,7 @@ export default function Component() {
           <Image width={50} height={50} src="/images/fox.png" alt="Slack Illustration"className=" max-w-md"/>
           <strong>Jeff Dow, Executive Vice President, Media and Broadcast Operations</strong>
           </figcaption>
-        </div>
+         </div>
             </div>
             <Image width={500} height={500} src="/images/Slack for enterprises.gif" alt="Slack Illustration" className=""unoptimized />
           </div>
