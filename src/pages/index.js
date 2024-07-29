@@ -27,20 +27,22 @@ export default function Component() {
       <Header/>
       <main> 
         <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="flex  w-full mx-auto lg:max-w-7xl ">
-          <div>
+        <div className="flex flex-col lg:flex-row justify-between items-center w-full mx-auto lg:max-w-7xl space-y-10 lg:space-y-0">
+          <div className="lg:w-1/2">
           <h2 className="text-sm font-semibold text-black">ENTERPRISE</h2>
-          <h1 className="text-4xl font-bold text-black">Performance and productivity for every level of your enterprise</h1>
-          <p className="text-lg mt-6 lg:mx-aut  text-black">
+          <h1 className="text-4xl font-bold text-black mt-4">Performance and productivity for every level of your enterprise</h1>
+          <p className="text-lg mt-6 text-black">
             Scale your processes, ensure company-wide compliance and maximise tech stack adoption - all with the power
             of Slack.
           </p>
-          <div className="flex space-x-4">
-            <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 mt-6 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
-            <button className="text-sm bg-white text-purple-900 border-purple-900 border rounded px-6 py-3 mt-6 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
+          <div className="flex space-x-4 mt-6">
+            <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
+            <button className="text-sm text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
           </div>
         </div>
-        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="max-w-md"/>
+        <div className="lg:w-1/2 flex justify-center">
+        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className=""/>
+        </div>
       </div>
      </div>
       </main>
@@ -54,8 +56,8 @@ export default function Component() {
       ))}
     </footer>
       <div className="py-16 px-4 sm:px-6 lg:px-8">
-      <div className="flex  w-full mx-auto lg:max-w-7xl ">
-         <div>
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full mx-auto lg:max-w-7xl space-y-10 lg:space-y-0">
+         <div className="lg:w-1/2">
             <h2 className="text-sm font-semibold text-black">PRODUCTIVITY AT SCALE</h2>
             <h2 className="text-4xl font-bold text-black">
               Meet the needs of your organisation with powerful productivity tools
@@ -99,7 +101,7 @@ export default function Component() {
           </div>
       </div>
       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-      <div className="flex flex-col lg:flex-row w-full mx-auto lg:max-w-7xl space-y-8 lg:space-y-0 lg:space-x-8 ">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full mx-auto lg:max-w-7xl space-y-10 lg:space-y-0">
         <div>
         <h2 className="text-sm font-semibold text-gray-900">SECURITY</h2>
         <h2 className="text-4xl font-bold text-black">Ensure company-wide safety and compliance</h2>
@@ -146,7 +148,7 @@ export default function Component() {
        </footer>
       </div>
       <div className="bg-transparent py-16 px-4 sm:px-6 lg:px-8">
-      <div className="flex  w-full mx-auto lg:max-w-7xl ">
+      <div className="flex flex-col lg:flex-row justify-between items-center w-full mx-auto lg:max-w-7xl space-y-10 lg:space-y-0">
        <div>
         <h2 className="text-sm font-semibold text-gray-900">PLATFORM</h2>
         <h2 className="text-4xl font-bold text-black">Customise Slack to work the way that you do</h2>
@@ -195,13 +197,15 @@ export default function Component() {
             <FaArrowRight />
           </i>
         </div>
-        <div className="flex p-8 space-x-8 ">
+        <div className="flex p-8 space-x-14">
           <Image width={50} height={50} src="/images/icon-zoom.png" alt="Zoom Logo" />
           <Image width={50} height={50} src="/images/icon-outlook.png" alt="Outlook Logo" />
-          <Image width={50} height={50} src="/images/icon-jira.png" alt="Jira Logo" />
-          <Image width={50} height={50} src="/images/icon-onedrive.png" alt="OneDrive Logo" />
           <Image width={50} height={50} src="/images/icon-drive.png" alt="Google Drive Logo" />
           <Image width={50} height={50} src="/images/icon-salesforce.png" alt="Salesforce Logo" />
+        </div>
+        <div className="flex p-8 space-x-14">
+          <Image width={50} height={50} src="/images/icon-jira.png" alt="Jira Logo" />
+          <Image width={50} height={50} src="/images/icon-onedrive.png" alt="OneDrive Logo" />
           <Image width={50} height={50} src="/images/icon-gmail.png" alt="Gmail Logo" />
           <Image width={50} height={50} src="/images/icon-dropbox.png" alt="Dropbox Logo" />
         </div>
