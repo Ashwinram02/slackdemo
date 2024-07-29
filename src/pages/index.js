@@ -290,11 +290,11 @@ export default function Component() {
         </div>
       </div>
     </div>
-    <div className="flex justify-center">
-      <Image width={400} height={400} src="/images/img-features.png" alt="Features Illustration"/>
-    </div>
-    <div className="bg-transparent py-20 px-10">
+    <div className="bg-transparent py-16 px-4 sm:px-6 lg:px-8">
   <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div className="flex justify-center">
+      <Image width={400} height={400} src="/images/img-features.png" alt="Features Illustration" />
+    </div>
     <div>
       <h2 className="text-3xl font-bold">Features</h2>
       <p className="mt-4 text-black">
@@ -304,37 +304,37 @@ export default function Component() {
         <Link href="/slack-ai" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaMagic/></i>
+              <i className="text-xl text-gray-700 mr-4"><FaMagic /></i>
               <span className="text-lg font-medium text-gray-900">Slack AI</span>
             </div>
-            <i className="text-gray-500"><FaArrowRight/></i>
+            <i className="text-gray-500"><FaArrowRight /></i>
           </div>
         </Link>
         <Link href="/security" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaLock/></i>
+              <i className="text-xl text-gray-700 mr-4"><FaLock /></i>
               <span className="text-lg font-medium text-gray-900">Security</span>
             </div>
-            <i className="text-gray-500"><FaArrowRight/></i>
+            <i className="text-gray-500"><FaArrowRight /></i>
           </div>
         </Link>
         <Link href="/enterprise-key-management" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaKey/></i>
+              <i className="text-xl text-gray-700 mr-4"><FaKey /></i>
               <span className="text-lg font-medium text-gray-900">Enterprise Key Management</span>
             </div>
-            <i className="text-gray-500"><FaArrowRight/></i>
+            <i className="text-gray-500"><FaArrowRight /></i>
           </div>
         </Link>
         <Link href="/slack-atlas" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaGlobe/></i>
+              <i className="text-xl text-gray-700 mr-4"><FaGlobe /></i>
               <span className="text-lg font-medium text-gray-900">Slack Atlas</span>
             </div>
-            <i className="text-gray-500"><FaArrowRight/></i>
+            <i className="text-gray-500"><FaArrowRight /></i>
           </div>
         </Link>
       </div>
