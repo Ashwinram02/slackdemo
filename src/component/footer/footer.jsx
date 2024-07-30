@@ -114,8 +114,8 @@ const Footer = () => {
       <div className="px-4 md:px-10 py-8 bg-purple-900 text-white">
         <h2 className="text-3xl font-bold text-center mb-4">Where the future works</h2>
         <div className="flex justify-center space-x-4 mb-8">
-          <button className="px-6 py-2 bg-white text-purple-900 font-semibold rounded">TALK TO SALES</button>
-          <button className="px-6 py-2 border border-white text-white font-semibold rounded">WATCH DEMO</button>
+        <button className="text-sm bg-white text-purple-900 border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
+        <button className="text-sm text-white border-white border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
         </div>
       </div>
       <div className="bg-white">
