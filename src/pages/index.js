@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';  
 import Link from "next/link"
 import Image from 'next/image';
 import Header from '@/component/header/header';
 import { FaArrowRight, FaShieldAlt, FaBriefcase, FaQuestionCircle, FaLightbulb, FaMagic, FaLock, FaKey, FaGlobe} from 'react-icons/fa';
 import Footer from '@/component/footer/footer';
-
+import FAQs from '@/component/FAQ';
 export default function Component() {
   const logos = [
     { src: '/images/logo-openai.png', alt: 'OpenAI Logo', href: 'https://openai.com' },
@@ -21,11 +21,11 @@ export default function Component() {
     { src: '/images/logo-gdpr.png', alt: 'Gdpr Logo'},
     { src: '/images/logo-aicpa-soc.png', alt: 'Aicpa Logo'},
     { src: '/images/logo-iso-27001.png', alt: 'Iso Logo'},
-  ];  
+  ];
   return (
     <>
       <Header/>
-      <main> 
+      <main>
         <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between items-center w-full mx-auto lg:max-w-7xl space-y-10 lg:space-y-0">
           <div className="lg:w-1/2">
@@ -33,8 +33,7 @@ export default function Component() {
           <h1 className="text-4xl font-bold text-black mt-4">Performance and productivity for every level of your enterprise</h1>
           <p className="text-lg mt-6 text-black">
             Scale your processes, ensure company-wide compliance and maximise tech stack adoption - all with the power
-            of Slack.
-          </p>
+            of Slack.</p>
           <div className="flex space-x-4 mt-6">
             <button className="text-sm bg-purple-900 text-white border rounded px-6 py-3 hover:bg-purple-950 transition duration-300">TALK TO SALES</button>
             <button className="text-sm text-purple-900 border-purple-900 border rounded px-6 py-3 hover:bg-gray-200 transition duration-300">WATCH DEMO </button>
@@ -290,61 +289,63 @@ export default function Component() {
         </div>
       </div>
     </div>
-    <div className="bg-transparent py-16 px-4 sm:px-6 lg:px-8">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-    <div className="flex justify-center">
-      <Image width={400} height={400} src="/images/img-features.png" alt="Features Illustration" />
-    </div>
-    <div>
-      <h2 className="text-3xl font-bold">Features</h2>
-      <p className="mt-4 text-black">
-        All the features of Slack work together, so everyone at your company can work more easily with each other.
-      </p>
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <Link href="/slack-ai" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaMagic /></i>
-              <span className="text-lg font-medium text-gray-900">Slack AI</span>
+      <div className="bg-transparent py-16 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="flex justify-center">
+        <Image width={400} height={400} src="/images/img-features.png" alt="Features Illustration" />
+      </div>
+      <div>
+        <h2 className="text-3xl font-bold">Features</h2>
+        <p className="mt-4 text-black">
+          All the features of Slack work together, so everyone at your company can work more easily with each other.
+        </p>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Link href="/slack-ai" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <i className="text-xl text-gray-700 mr-4"><FaMagic /></i>
+                <span className="text-lg font-medium text-gray-900">Slack AI</span>
+              </div>
+              <i className="text-gray-500"><FaArrowRight /></i>
             </div>
-            <i className="text-gray-500"><FaArrowRight /></i>
-          </div>
-        </Link>
-        <Link href="/security" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaLock /></i>
-              <span className="text-lg font-medium text-gray-900">Security</span>
+          </Link>
+          <Link href="/security" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <i className="text-xl text-gray-700 mr-4"><FaLock /></i>
+                <span className="text-lg font-medium text-gray-900">Security</span>
+              </div>
+              <i className="text-gray-500"><FaArrowRight /></i>
             </div>
-            <i className="text-gray-500"><FaArrowRight /></i>
-          </div>
-        </Link>
-        <Link href="/enterprise-key-management" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaKey /></i>
-              <span className="text-lg font-medium text-gray-900">Enterprise Key Management</span>
+          </Link>
+          <Link href="/enterprise-key-management" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <i className="text-xl text-gray-700 mr-4"><FaKey /></i>
+                <span className="text-lg font-medium text-gray-900">Enterprise Key Management</span>
+              </div>
+              <i className="text-gray-500"><FaArrowRight /></i>
             </div>
-            <i className="text-gray-500"><FaArrowRight /></i>
-          </div>
-        </Link>
-        <Link href="/slack-atlas" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center">
-              <i className="text-xl text-gray-700 mr-4"><FaGlobe /></i>
-              <span className="text-lg font-medium text-gray-900">Slack Atlas</span>
+          </Link>
+          <Link href="/slack-atlas" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <i className="text-xl text-gray-700 mr-4"><FaGlobe /></i>
+                <span className="text-lg font-medium text-gray-900">Slack Atlas</span>
+              </div>
+              <i className="text-gray-500"><FaArrowRight /></i>
             </div>
-            <i className="text-gray-500"><FaArrowRight /></i>
-          </div>
+          </Link>
+        </div>
+        <Link href="/features" className="mt-8 inline-block text-blue-500 hover:underline">
+          See all Features <FaArrowRight className="inline ml-2" />
         </Link>
       </div>
-      <Link href="/features" className="mt-8 inline-block text-blue-500 hover:underline">
-        See all Features <FaArrowRight className="inline ml-2" />
-      </Link>
     </div>
-  </div>
-</div>
-
+  </div> 
+    <div className='bg-white'>  
+     <FAQs/>
+    </div>
       <div>
         <Footer/>
       </div>
