@@ -40,7 +40,7 @@ export default function Component() {
           </div>
         </div>
         <div className="lg:w-1/2 flex justify-center">
-        <Image width={400} height={400} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className=""/>
+        <Image width={500} height={500} src="/images/Hero-illo-enterprise-page.IN.png" alt="Slack Illustration" className="max-w-md"/>
         </div>
       </div>
      </div>

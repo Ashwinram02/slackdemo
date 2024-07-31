@@ -30,9 +30,21 @@ const featuresData = [
     ],
   },
   {
-    title: 'INTELLIGENCE',
+    title: 'FEATURED',
     links: [
-      { name: 'Slack AI', description: 'Save time and work smarter with powerfully simple AI' },
+      {
+        name: 'Featured',
+        description: 'Take a quick interactive tour of Slack.',
+        isFeatured: true,
+        featuredContent: {
+          imgSrc: '/images/slack-tour-promo.png',
+          linkText: 'Start the tour',
+          linkHref: '#',
+        },
+      },
+      { name: 'What is Slack?', description: '' },
+      { name: 'Slack vs email', description: '' },
+      { name: 'Accessibility', description: '' },
     ],
   },
   {
@@ -41,6 +53,12 @@ const featuresData = [
       { name: 'Security', description: 'Protect data, ensure compliance' },
       { name: 'Enterprise Key Management', description: 'Monitor and revoke access' },
       { name: 'Slack Atlas', description: 'Discover rich profiles and org chats' },
+    ],
+  },
+  {
+    title: 'INTELLIGENCE',
+    links: [
+      { name: 'Slack AI', description: 'Save time and work smarter with powerfully simple AI' },
     ],
   },
 ];
@@ -125,7 +143,6 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between p-4 border-b bg-white text-black">
       <div className="flex items-center space-x-4">
-        
       </div>
       <nav className="flex items-center space-x-6 relative"> 
         <Image width={100} height={100} src="/images/slack-salesforce-logo-nav-black.png" alt="Slack Logo" className="h-12" />   
@@ -134,21 +151,33 @@ const Header = () => {
          onMouseLeave={() => setIsFeaturesDropdownOpen(false)}>
          <button className="text-sm font-medium hover:text-blue-600 transition duration-300">Features</button>
      {isFeaturesDropdownOpen && (
-     <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-3 p-4 gap-4">
+     <div className="absolute top-full left-0 w-[600px] bg-white border rounded shadow-lg grid grid-cols-4 p-4 gap-4">
       {featuresData.map((section, index) => (
         <div key={index}>
           <h3 className="text-xs font-bold uppercase mb-2">{section.title}</h3>
           {section.links.map((link, linkIndex) => (
-            <Link key={linkIndex} href="#" className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
-              {link.name}
-              <p className="text-sm">{link.description}</p>
-            </Link>
-          ))}
-        </div>
-      ))}
-     </div>
-   )}
-    </div>
+            <div key={linkIndex} className="mb-4">
+            {link.isFeatured ? (
+              <div className="flex flex-col items-start">
+                <Image src="/images/slack-tour-promo.png" alt="Featured" width={150} height={150} />
+                <p className="text-sm">{link.description}</p>
+                <Link href={link.featuredContent.linkHref} className="text-blue-600 hover:underline">
+                  {link.featuredContent.linkText}
+                </Link>
+              </div>
+            ) : (
+              <div>
+                <Link href="#" className="text-sm font-medium text-black hover:underline">{link.name}</Link>
+                <p className="text-sm">{link.description}</p>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    ))}
+  </div>
+)}
+</div>
         <div className="relative"
         onMouseEnter={() => setIsSolutionsDropdownOpen(true)}
         onMouseLeave={() => setIsSolutionsDropdownOpen(false)}>

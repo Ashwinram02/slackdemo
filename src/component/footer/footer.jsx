@@ -175,7 +175,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-between items-center py-4 px-4 md:px-10 border-t border-gray-200">
           <div className="flex items-center space-x-2 text-black">
-            <Link href="#" className="hover:text-blue-500 flex items-center space-x-1">
+            <Link href="#" className="hover:text-blue-500 flex hover:underline items-center space-x-1">
               <span>Download Slack</span>
               <FaArrowDown className="text-lg" />
             </Link>
