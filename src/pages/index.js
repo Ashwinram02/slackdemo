@@ -82,8 +82,12 @@ export default function Component() {
               </li>
             </ul>
             <div className="mt-5 flex items-center ">
-             <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 hover:underline">Learn more about Slack at scale </Link> 
-             <i className="flex text-blue-500"><FaArrowRight /></i>
+            <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 hover:underline flex items-center">
+              Learn more about Slack at scale 
+              <svg className="transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
             </div>
             <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl ">
           <blockquote className="mt-10">
@@ -125,8 +129,12 @@ export default function Component() {
           </li>
         </ul>
         <div className="mt-5 flex items-center">
-          <Link href="/slack-security" className="text-blue-500 hover:underline ml-2">Learn more about security</Link>
-          <i className="flex text-blue-500"><FaArrowRight /></i>
+        <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 hover:underline flex items-center">
+              Learn more about Security
+              <svg className="transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </Link>
         </div>
         <div className="mt-12 mx-auto max-w-2xl lg:max-w-7xl">
             <p className="font-medium text-gray-900">
@@ -188,14 +196,14 @@ export default function Component() {
             <span>Integrate internal tools, processes and data with ease</span>
           </li>
         </ul>
-        <div className="mt-5 flex items-center">
-          <Link href="/apps-integrations" className="text-blue-500 ml-2 hover:underline">
-            Learn more about apps and integrations
-          </Link>
-          <i className="flex text-blue-500 hover:underline">
-            <FaArrowRight />
-          </i>
-        </div>
+       <div className="mt-5 flex items-center">
+        <Link href="/slack-enterprise-solutions" className="text-blue-500 ml-2 hover:underline flex items-center">
+        Learn more about apps and integrations
+        <svg className="transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+        </Link>
+      </div>
         <div className="flex p-8 space-x-14">
           <Image width={50} height={50} src="/images/icon-zoom.png" alt="Zoom Logo" />
           <Image width={50} height={50} src="/images/icon-outlook.png" alt="Outlook Logo" />
@@ -215,7 +223,10 @@ export default function Component() {
        <div className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="text-center">
           <h2 className="text-3xl font-bold text-black">Ready to take the next step with Slack for your enterprise?</h2>
-          <Link href="/contact-sales" className="text-blue-500 hover:underline mt-4 inline-block">Chat with sales to get started <FaArrowRight className="inline-block hover:underline" /></Link>
+          <Link href="/contact-sales" className="text-blue-500 hover:underline mt-4 inline-block">Chat with sales to get started
+          <svg className="inline transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg> </Link>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
@@ -279,9 +290,11 @@ export default function Component() {
                 <i className="text-gray-500"><FaArrowRight/></i>
               </div>
             </Link>
-          </div>
-          <Link href="/solutions" className="mt-8 inline-block text-blue-500 hover:underline">
-            See all Solutions <FaArrowRight className="inline ml-2" />
+          </div><Link href="/solutions" className="mt-8 inline-block text-blue-500 hover:underline">
+          See all Solutions
+          <svg className="inline transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg> 
           </Link>
         </div>
         <div className="flex justify-center">
@@ -338,7 +351,9 @@ export default function Component() {
           </Link>
         </div>
         <Link href="/features" className="mt-8 inline-block text-blue-500 hover:underline">
-          See all Features <FaArrowRight className="inline ml-2" />
+          See all Features <svg className="inline transition-transform duration-200 transform hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
         </Link>
       </div>
     </div>

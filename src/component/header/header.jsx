@@ -156,7 +156,7 @@ const Header = () => {
         <div key={index}>
           <h3 className="text-xs font-bold uppercase mb-2">{section.title}</h3>
           {section.links.map((link, linkIndex) => (
-            <div key={linkIndex} className="mb-4">
+            <div key={linkIndex} className="block px-4 py-2 text-sm text-black hover:bg-gray-100">
             {link.isFeatured ? (
               <div className="flex flex-col items-start">
                 <Image src="/images/slack-tour-promo.png" alt="Featured" width={150} height={150} />
